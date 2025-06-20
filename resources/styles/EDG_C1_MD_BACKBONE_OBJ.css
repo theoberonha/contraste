@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Exo2-SemiBold";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Exo2-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Exo2-SemiBoldItalic";
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/Exo2-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: "Exo2-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Exo2-Bold.ttf);
+}
+@font-face {
+  font-family: "Exo2-BoldItalic";
+  font-weight: 700;
+  font-style: italic;
+  src: url(../fonts/Exo2-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "Exo2-ExtraBold";
+  font-weight: bolder;
+  font-style: normal;
+  src: url(../fonts/Exo2-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato Black";
+  src: url(../fonts/Lato-Black.ttf);
+}
+h1 {
+  font-family: "Exo2-Bold";
+}
+
+h1 small {
+  font-family: "Exo2-SemiBoldItalic";
+}
+
+h2 {
+  font-family: "Exo2-ExtraBold";
+}
+
+p,
+span {
+  font-family: "Exo2-SemiBold";
+}
+
+:root {
+  --green: #96d246;
+  --orange: #e95c0c;
+  --orange-12: #ff96001f;
+  --blue: #4caf50;
+  --blue-12: #4caf501f;
+  --purple: #be5aab;
+  --dark-orange: #f05a0f;
+  --dark-green: #009664;
+}
+
+/* CAROUSEL AREA */
+#BACKBONE_OBJ {
+  background-color: transparent;
+  margin: 20px auto;
+  max-width: 720px;
+}
+#BACKBONE_OBJ .carousel-control-next,
+#BACKBONE_OBJ .carousel-control-prev {
+  align-items: flex-start;
+  padding-top: 50%;
+  display: none;
+}
+#BACKBONE_OBJ .carousel-control-next-icon {
+  background-image: url(../images/right-triangle-icon.png);
+}
+#BACKBONE_OBJ .carousel-control-prev-icon {
+  background-image: url(../images/right-triangle-icon.png);
+}
+#BACKBONE_OBJ .carousel-header {
+  display: flex;
+  align-items: center;
+  padding-block: 6px 6px;
+  background: white;
+  margin: 0;
+  border: 3px solid var(--blue);
+  background-color: var(--blue-12);
+  border-bottom: none;
+  border-top-right-radius: 1rem;
+  flex-direction: column;
+  background-image: url(../images/EDG_C1_MD_BACKBONE_OBJ/md_fundo_azul_720_50.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#BACKBONE_OBJ .carousel-header .carousel-title {
+  font-size: 34px;
+  font-family: "Exo2-ExtraBold";
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 95%;
+  text-shadow: -2px -2px 0 var(--blue), 2px -2px 0 var(--blue), -2px 2px 0 var(--blue), 2px 2px 0 var(--blue);
+  text-transform: ;
+}
+@media (max-width: 768px) {
+  #BACKBONE_OBJ .carousel-header .carousel-title {
+    font-size: 28px;
+  }
+}
+#BACKBONE_OBJ .carousel-header .carousel-description {
+  font-size: 20px;
+  font-family: "Lato Black";
+}
+@media (max-width: 768px) {
+  #BACKBONE_OBJ .carousel-header .carousel-description {
+    font-size: 18px;
+  }
+}
+#BACKBONE_OBJ .carousel-inner {
+  transition: transform 0.5s ease;
+  border: 3px solid var(--blue);
+  border-top: 0;
+  background-color: var(--blue-12);
+}
+#BACKBONE_OBJ .carousel-item .carousel-image {
+  border-bottom: 2px solid white;
+  background-color: #000;
+}
+#BACKBONE_OBJ .carousel-item .carousel-sub p strong {
+  font-family: "Lato Black";
+  color: var(--dark-orange);
+  font-size: 1.1rem;
+}
+#BACKBONE_OBJ .carousel-item .carousel-sub {
+  display: flex;
+  min-height: 90px;
+  text-align: left;
+  padding: 1rem 3rem;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  #BACKBONE_OBJ .carousel-item .carousel-sub {
+    padding: 1rem;
+  }
+}
+#BACKBONE_OBJ .carousel-item .carousel-sub p {
+  line-height: normal;
+}
+#BACKBONE_OBJ .carousel-item .carousel-sub-title {
+  color: #f04e23;
+}
+#BACKBONE_OBJ .carousel_header_ico {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin: 0;
+  font-family: "Lato Black";
+}
+#BACKBONE_OBJ .carousel_header_ico .carousel-section-indicator {
+  color: #f0f8ff;
+  font-size: 12px;
+  text-transform: ;
+  /*margin-inline: 2px auto;*/
+  background-color: #D81400;
+  /*box-shadow: rgba(0,0,0,0.8) 2px 2px 0px;*/
+}
+#BACKBONE_OBJ .carousel_header_ico .ico {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/right-triangle-icon.png);
+  background-size: contain;
+  margin-left: -5px;
+}
+#BACKBONE_OBJ .carousel-button-group {
+  position: relative;
+  display: inline-flex;
+  height: auto;
+  bottom: unset;
+  padding: 16px 0;
+  margin: 0;
+  border-left: 3px solid var(--blue);
+  border-right: 3px solid var(--blue);
+  background-color: var(--blue-12);
+  flex-wrap: wrap;
+  width: 100%;
+}
+#BACKBONE_OBJ .carousel-button-group button {
+  height: auto;
+  padding: 4px 8px;
+  text-indent: initial !important;
+  font-family: "Lato Regular";
+  color: black;
+  opacity: 1;
+  background-color: white;
+  border: 3px solid var(--blue);
+  border-radius: 5px;
+  /* box-shadow: #b3bfcd 4px 4px 0px; */
+  font-size: 1rem;
+  width: max-content;
+  text-transform: ;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+#BACKBONE_OBJ .carousel-button-group button.active {
+  color: white;
+  background: #D81400;
+}
+@media (max-width: 768px) {
+  #BACKBONE_OBJ .carousel-button-group button {
+    font-size: 1rem;
+  }
+}
+#BACKBONE_OBJ.carousel-fade .carousel-item-next.carousel-item-start,
+#BACKBONE_OBJ.carousel-fade .carousel-item-prev.carousel-item-end,
+#BACKBONE_OBJ.carousel-fade .carousel-item.active {
+  z-index: 1;
+  opacity: unset;
+}
+#BACKBONE_OBJ.carousel-fade .carousel-item-next.carousel-item-start .carousel-image,
+#BACKBONE_OBJ.carousel-fade .carousel-item-prev.carousel-item-end .carousel-image,
+#BACKBONE_OBJ.carousel-fade .carousel-item.active .carousel-image {
+  z-index: 1;
+  opacity: 1;
+}
+#BACKBONE_OBJ.carousel-fade .active.carousel-item-end,
+#BACKBONE_OBJ.carousel-fade .active.carousel-item-start {
+  z-index: 0;
+  opacity: unset;
+  transition: unset;
+}
+#BACKBONE_OBJ.carousel-fade .active.carousel-item-end .carousel-image,
+#BACKBONE_OBJ.carousel-fade .active.carousel-item-start .carousel-image {
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0s 0.6s;
+}
+
+/*# sourceMappingURL=EDG_C1_MD_BACKBONE_OBJ.css.map */
